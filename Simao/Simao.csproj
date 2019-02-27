@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E23939E6-91F4-4DBE-8198-B0D4880AD8D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Simao</RootNamespace>
+    <AssemblyName>Simao</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Juliu\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>bitbug_favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>CD8EC0A717C0C5B62DE29D9D94E5E8B3BA43D8D8</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Simao_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Events.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Judge.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TemperGif.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Simao_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\跳绳.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\略.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bitbug_favicon.ico" />
+    <None Include="Resources\我要打死你.gif" />
+    <None Include="Resources\你是故意的.gif" />
+    <None Include="Resources\你让我生气.gif" />
+    <None Include="Resources\你不哄着我.gif" />
+    <None Include="Resources\太棒啦.gif" />
+    <None Include="Resources\哇1.gif" />
+    <None Include="Resources\吃包子.gif" />
+    <None Include="Resources\砸你.gif" />
+    <None Include="Resources\四毛毛飞.gif" />
+    <None Include="Resources\弹唱.gif" />
+    <None Include="Resources\疑问.gif" />
+    <None Include="Resources\谢谢1.gif" />
+    <None Include="Resources\我命苦啊.gif" />
+    <None Include="Resources\跳舞.gif" />
+    <None Include="Resources\睡觉1.gif" />
+    <None Include="Resources\甩手机.gif" />
+    <None Include="Resources\摔.gif" />
+    <None Include="Resources\亲.gif" />
+    <None Include="Resources\懒得理你.gif" />
+    <None Include="Resources\来啊.gif" />
+    <None Include="Resources\捡手机.gif" />
+    <None Include="Resources\哈哈1.gif" />
+    <None Include="Resources\滚.gif" />
+    <None Include="Resources\烦死了.gif" />
+    <None Include="Resources\嗯嗯1.gif" />
+    <None Include="Resources\打喷嚏.gif" />
+    <None Include="Resources\打你1.gif" />
+    <None Include="Resources\打架.gif" />
+    <None Include="Resources\抱抱.gif" />
+    <None Include="Resources\按摩1.gif" />
+    <None Include="Resources\爱心.gif" />
+    <None Include="Resources\OK.gif" />
+    <None Include="Resources\NO.gif" />
+    <None Include="Resources\委屈.gif" />
+    <None Include="Resources\哇啊.gif" />
+    <None Include="Resources\吐舌头.gif" />
+    <None Include="Resources\提起.gif" />
+    <None Include="Resources\睡觉.gif" />
+    <None Include="Resources\去去去.gif" />
+    <None Include="Resources\呐.gif" />
+    <None Include="Resources\摸.gif" />
+    <None Include="Resources\理我.gif" />
+    <None Include="Resources\加油.gif" />
+    <None Include="Resources\哼哼.gif" />
+    <None Include="Resources\嘿嘿.gif" />
+    <None Include="Resources\好乖.gif" />
+    <None Include="Resources\害羞.gif" />
+    <None Include="Resources\乖1.gif" />
+    <None Include="Resources\扶额.gif" />
+    <None Include="Resources\烦.gif" />
+    <None Include="Resources\嗯嗯.gif" />
+    <None Include="Resources\丢.gif" />
+    <None Include="Resources\弹琴.gif" />
+    <None Include="Resources\吃.gif" />
+    <None Include="Resources\抱.gif" />
+    <None Include="Resources\按摩.gif" />
+    <None Include="Resources\耶.gif" />
+    <None Include="Resources\谢谢.gif" />
+    <None Include="Resources\我来了.gif" />
+    <None Include="Resources\哇.gif" />
+    <None Include="Resources\生气.gif" />
+    <None Include="Resources\什么.gif" />
+    <None Include="Resources\亲亲.gif" />
+    <None Include="Resources\捏.gif" />
+    <None Include="Resources\哭.gif" />
+    <None Include="Resources\哼.gif" />
+    <None Include="Resources\好气啊.gif" />
+    <None Include="Resources\好的.gif" />
+    <None Include="Resources\哈哈.gif" />
+    <None Include="Resources\乖.gif" />
+    <None Include="Resources\高兴.gif" />
+    <None Include="Resources\嗯.gif" />
+    <None Include="Resources\打你.gif" />
+    <None Include="Resources\不.gif" />
+    <None Include="Resources\比心.gif" />
+    <None Include="Resources\暗中观察.gif" />
+    <None Include="Resources\哎.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
